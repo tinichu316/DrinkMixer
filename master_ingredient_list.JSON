@@ -24,6 +24,6 @@
   "beverage_type":{
     "1": "juice",
     "2": "alcohol",
-    "3": "misc",
+    "3": "misc"
   }
 }
