@@ -1,1 +1,1 @@
-print("We shoukd use the goddamn Github GUI")
+print("We should use the goddamn Github GUI")
