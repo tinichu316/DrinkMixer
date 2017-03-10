@@ -1,0 +1,25 @@
+{
+  "recipies": {
+    "pina colada": {
+      "liquor":{
+        "pinapple juice": 3,
+        "white rum": 1,
+        "coconut cream": 1
+      },
+      "directions":{
+        "1": "mix",
+        "2": "serve"
+      }
+    },
+    "bloody mary": {
+      "liquor":{
+        "orange juice": 2,
+        "vodka": 1
+      },
+      "directions":{
+        "1": "shake",
+        "2": "pour over ice"
+      }
+    }
+  }
+}
