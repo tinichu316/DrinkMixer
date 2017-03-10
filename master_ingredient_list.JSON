@@ -1,9 +1,29 @@
 {
   "ingredients":{
-    "1": ["pineapple juice", "1"],
-    "2": ["orange juice", "1"],
-    "3": ["white rum", "2"],
-    "4": ["vodka", "2"],
-    "5": ["coconut cream", "3"]
+    "1": {
+      "name": "pineapple juice",
+      "type": "1"
+    },
+    "2": {
+     "name": "orange juice",
+     "type": "1"
+    },
+    "3": {
+      "name": "white rum",
+      "type": "2"
+    },
+    "4": {
+     "name": "vodka",
+     "type": "2"
+    },
+    "5": {
+      "name": "coconut cream",
+      "type": "3"
+    }
+  },
+  "beverage_type":{
+    "1": "juice",
+    "2": "alcohol",
+    "3": "misc",
   }
 }
