@@ -2,11 +2,27 @@
 The main program Python file
 """
 
-def main():
+def handleinput(inp):
+    """Handles the input passed from the user
+
+    Args:
+        inp(Str): The line input by the user
     """
-    The main function of the program
+    # General structure of each case of user input
+    if inp == "something":
+        pass
+    # Needs a case for:
+    #   - Listing drinks
+    #   - Inputing inventory
+    #   - Adding Recipes
+    #   - Finding recipes from inventory
+
+def run():
+    """The main function of the program
     """
-    print("this works")
+    userinput = input("HUH?: ")
+    while userinput != "exit":
+        handleinput(userinput)
 
 if __name__ == "__main__":
-    main()
+    run()
