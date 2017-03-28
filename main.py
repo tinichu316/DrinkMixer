@@ -2,17 +2,6 @@
 The main program Python file
 """
 
-def parseJSON(path):
-    """Parses the JSON file at the specified path
-
-    Args:
-        path(Str): A string specifying the path of the JSON file
-
-    Returns:
-        Dict: A dictionary representation of the JSON file
-    """
-    return {}
-
 def handleinput(inp):
     """Handles the input passed from the user
 
