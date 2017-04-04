@@ -2,6 +2,8 @@
 The main program Python file
 """
 
+from JSONparser import JSONParser
+
 def handleinput(inp):
     """Handles the input passed from the user
 
@@ -25,4 +27,7 @@ def run():
         handleinput(userinput)
 
 if __name__ == "__main__":
+    test = JSONParser("JSON/recipies.JSON")
+    if 'recipies' in test.getdata():
+        print(test.getdata()['recipies'])
     run()

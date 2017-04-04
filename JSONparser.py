@@ -19,7 +19,8 @@ class JSONParser:
             path(Str): The file path to read JSON data from
         """
         self._path = path
-        self._data = self._readfile()
+        self._data = None
+        self._readfile()
 
     def _readfile(self):
         """
@@ -27,13 +28,20 @@ class JSONParser:
 
         Args:
             self(JSONParser): the JSON parser
-            
+
         Returns:
             Dict: A dictionary representation of the JSON data
         """
-        json_file = open(self.path)
-        json_data = json.load(json_file)
-        return json_data
+        try:
+            with open(self._path, "r+") as datafile:
+                self._data = json.load(datafile)
+        except json.JSONDecodeError:
+            # TODO: Improve error handling
+            print("could not decode JSON")
+            self._data = {}
+        except FileNotFoundError:
+            open(self._path, 'w')
+            self._data = {}
 
     def getdata(self):
         """
